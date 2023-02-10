@@ -10,6 +10,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import Card from "../components/Card";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -30,15 +31,12 @@ const Home = () => {
               borderRadius={"3xl"}
               placeItems={"flex-start"}
             >
-              <Heading as={"h2"}>Shop Karo !</Heading>
+              <Heading as={"h2"}>Big Billion Days is On !</Heading>
               <Text textAlign={"justify"}>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Voluptatem incidunt sit reprehenderit dolores asperiores
-                doloremque, ea, dolor harum, explicabo optio fuga commodi. Optio
-                quidem minima debitis inventore deleniti harum id!
+                We have the best deals and offers for all the products. We have Men , Women , Baby category in our store. You will get 10% discount in Big Billion Days Sale.
               </Text>
               <Button type="button" size={"lg"} bgColor={"blue.100"}>
-                Shop Products
+                <Link to={"/products"}>Shop Products</Link>
               </Button>
             </VStack>
             <Image

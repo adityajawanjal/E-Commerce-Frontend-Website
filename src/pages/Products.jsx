@@ -1,9 +1,19 @@
-import React from 'react'
+import React, { useEffect } from "react";
+import Product from "../components/Product";
+
+
+// axios.get("https://pujakasaman/api/products");
 
 const Products = () => {
-  return (
-    <div>Products</div>
-  )
-}
+  useEffect(() => {
+    console.log("hi");
+  }, []);
 
-export default Products
+  return (
+    <>
+      <Product />
+    </>
+  );
+};
+
+export default Products;

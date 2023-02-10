@@ -17,6 +17,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import Card from "../components/Card";
+import { Link } from "react-router-dom";
 
 const About = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -66,11 +67,11 @@ const About = () => {
           </ModalBody>
           <ModalFooter>
             <HStack gap={3}>
-              <Button type="button" size={"lg"} onClick={onClose}>
+              <Button type="button" size={"lg"} onClick={onClose} bgColor={"blue.100"}>
                 Close
               </Button>
-              <Button type="button" size={"lg"}>
-                Products
+              <Button type="button" size={"lg"} bgColor={"blue.100"}>
+                <Link to={"/products"}>Products</Link>
               </Button>
             </HStack>
           </ModalFooter>

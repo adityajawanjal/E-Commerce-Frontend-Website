@@ -9,24 +9,21 @@ const Contact = () => {
       id: 1,
       title: "G-Mail",
       img: "https://3.bp.blogspot.com/-O231QKWcdH0/VGIFcFuWo5I/AAAAAAAAPnE/S3a8H6twUoE/s1600/logo_gmail_color_112in128dp.png",
+      href:"mailto:adityajawanjal01@gmail.com",
       btnText: "Send Mail",
     },
     {
       id: 2,
-      title: "G-Mail",
-      img: "https://3.bp.blogspot.com/-O231QKWcdH0/VGIFcFuWo5I/AAAAAAAAPnE/S3a8H6twUoE/s1600/logo_gmail_color_112in128dp.png",
-      btnText: "Send Mail",
-    },
-    {
-      id: 3,
-      title: "G-Mail",
-      img: "https://3.bp.blogspot.com/-O231QKWcdH0/VGIFcFuWo5I/AAAAAAAAPnE/S3a8H6twUoE/s1600/logo_gmail_color_112in128dp.png",
-      btnText: "Send Mail",
+      title: "LinkedIn",
+      img: "https://pbs.twimg.com/profile_images/1508518003184349187/1KQYoqPY_400x400.png",
+      href:"https://www.linkedin.com/in/adityajawanjal/",
+      btnText: "Connect",
     },
   ];
   return (
     <>
       <Box mt={"10"} mb={"20"}>
+       
         <Center>
           <VStack gap={5} p={"5"}>
             <Heading as={"h2"}>Contact Me</Heading>
@@ -52,6 +49,7 @@ const Contact = () => {
                   key={e.id}
                   title={e.title}
                   img={e.img}
+                  href={e.href}
                   btnText={e.btnText}
                 />
               </>

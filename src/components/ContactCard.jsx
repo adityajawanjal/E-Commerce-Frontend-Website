@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Button, Center, Heading, Image, VStack } from "@chakra-ui/react";
 
-const ContactCard = ({title , img , btnText}) => {
+const ContactCard = ({title , img , href , btnText}) => {
   return (
     <>
       <Box >
@@ -18,7 +18,7 @@ const ContactCard = ({title , img , btnText}) => {
               borderRadius={"3xl"}
             />
             <Button type="button" size={"lg"} bgColor={"blue.100"}>
-              {btnText}
+              <a href={href}>{btnText}</a>
             </Button>
           </VStack>
         </Center>
